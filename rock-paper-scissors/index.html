@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
-        <!-- <script src="rock-paper-scissors.js"></script> -->
         <link rel="stylesheet" href="styles.css">
     </head>
     <body class = "body">
@@ -11,11 +10,11 @@
             <div class="score-container">
                 <div>
                     <h2 class="score-identifier">You</h2>
-                    <h3 class="human-score">0</h3>
+                    <a id="human-score">0</a>
                 </div>
                 <div>
                     <h2 class="score-identifier">Computer</h2>
-                    <h3 class="computer-score">0</h3>
+                    <a id="computer-score">0</a>
                 </div>
             </div>
             <div class="move-container">
@@ -24,5 +23,6 @@
                 <button id="scissors" class="button">Scissors</button>
             </div>
         </div>
+        <script src="rock-paper-scissors.js"></script>
     </body>
 </html>
