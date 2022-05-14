@@ -5,3 +5,5 @@
 Project 1: Recipe book using pure HTML with very basic CSS
 
 Project 2: Rock-paper-scissors game with a custom UI
+
+Project 3: Etch-a-sketch game with basic CSS styling
