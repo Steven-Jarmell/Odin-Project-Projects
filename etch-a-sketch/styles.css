@@ -3,3 +3,18 @@
     height: 500px;
     display: grid;
 }
+
+.root {
+    background-color:aquamarine;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    text-align: center;
+}
+
