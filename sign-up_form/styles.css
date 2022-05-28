@@ -1,0 +1,45 @@
+:root {
+    --pitt-gold: #FFB81C;
+    --pitt-blue: #003594;
+}
+
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex-container,
+.logo {
+    display: flex;
+}
+
+.left-side{
+    background-image: url(./images/background_image.bmp);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 40vw;
+    
+}
+
+.logo{
+    position: relative;
+    top: 35vh;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.pitt-logo {
+    height: 10vh;
+    padding-right: 2vw;
+}
+
+.logo-text {
+    gap: 2px;
+    font-size: 11vh;
+    color: var(--pitt-blue);
+    -webkit-text-stroke: 1.5px var(--pitt-gold);
+}

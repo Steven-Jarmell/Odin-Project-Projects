@@ -8,4 +8,4 @@ Project 2: Rock-paper-scissors game with a custom UI
 
 Project 3: Etch-a-sketch game with basic CSS styling
 
-Project 4: Sign-up form for an imaginary service
+Project 4: Kenny Pickett themed Sign-up form for an imaginary Kenny Pickett fan club
