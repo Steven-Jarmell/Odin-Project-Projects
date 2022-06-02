@@ -1,3 +1,51 @@
-:root {
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 'sidebar header'
+                         'sidebar content';
+}
+
+/* Sidebar */
+
+.sidebar {
     background-color: blue;
+    color: gray;
+    grid-area: sidebar;
+    padding: 2rem;
+}
+
+/* Header */
+
+.header {
+    background-color: red;
+    grid-area: header;
+    padding: 1.5rem 3 rem;
+}
+
+/* Content */
+
+.content {
+    grid-area: content;
+    background-color: gray;
+    padding: 2rem;
+    display: grid;
+    grid-template-areas: 'projects announcements'
+                         'projects trending';
+    overflow: auto;
+    gap: 2rem;
+    
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
