@@ -1,10 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        Something
-    </body>
+  <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Admin Dashboard</title>
+      <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+        <div class="top">
+            <div class="search">
+                <label for="search">
+                    <span class="icon-outline search-icon">search</span>
+                </label>
+                <input type="text" name="search" id="search"/>
+            </div>
+        <div class="account">
+            <button>
+                <span class="icon-outline"> notifications_active </span>
+            </button>
+            <div class="picture"></div>
+                <p class="name">Morgan Oakley</p>
+            </div>
+        </div>
+
+        <div class="bottom">
+            <div class="profile">
+                <div class="picture"></div>
+                <div class="profile-name">
+                    <p class="greeting">Hi there,</p>
+                    <p class="name">
+                        Morgan Oakley <span class="username">(@morgan)</span>
+                    </p>
+                </div>
+              </div>
+            <div class="buttons">
+                <button class="btn">New</button>
+                <button class="btn">Upload</button>
+                <button class="btn">Share</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="sidebar">
+        <h1 class="sidebar-title">
+            <span class="material-icons"> dashboard </span>
+            Dashboard
+        </h1>
+        <ul class="nav">
+            <li class="nav-item current">
+                <a href="#" class="nav-link">
+                    <span class="material-icons"> home </span> 
+                    Home
+                </a>
+
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> account_circle </span>
+                    Profile
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> message </span>
+                    Messages
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> history </span> 
+                    History</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> task </span> 
+                    Tasks
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> groups </span>
+                    Communities
+                </a>
+            </li>
+        </ul>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> settings </span>
+                    Settings
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> help_center </span>
+                    Support
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <span class="icon-outline"> verified_user </span>
+                    Privacy
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <main class="content">
+      <div class="projects">
+        <h3>Your Projects</h3>
+        <div class="cards">
+          <div class="card">
+            <h5 class="card-title">Super Cool Project</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna
+               aliqua. Aliquam malesuada bibendum arcu vitae elementum 
+               curabitur. Pulvinar mattis nunc sed blandit libero.
+            </p>
+            <div class="actions">
+              <span class="icon-outline"> star_border </span>
+              <span class="icon-outline"> visibility </span>
+              <span class="icon-outline"> open_in_new </span>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-title">Less Cool Project</h5>
+            <p class="card-text">
+              Risus commodo viverra maecenas accumsan lacus vel. Nunc eget lorem
+              dolor sed viverra ipsum nunc aliquet bibendum. Nec sagittis
+              aliquam malesuada bibendum arcu vitae elementum.
+            </p>
+            <div class="actions">
+              <span class="icon-outline"> star_border </span>
+              <span class="icon-outline"> visibility </span>
+              <span class="icon-outline"> open_in_new </span>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-title">Impossible App</h5>
+            <p class="card-text">
+              Et tortor consequat id porta nibh venenatis cras sed. 
+              Hendrerit dolor magna eget est lorem. Amet commodo nulla
+               facilisi nullam vehicula ipsum a arcu cursus. In tellus 
+               nteger feugiat scelerisque varius morbi enim nunc.
+            </p>
+            <div class="actions">
+              <span class="icon-outline"> star_border </span>
+              <span class="icon-outline"> visibility </span>
+              <span class="icon-outline"> open_in_new </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h5 class="card-title">Easy Peasy App</h5>
+            <p class="card-text">
+              Turpis egestas integer eget aliquet nibh praesent tristique magna.
+              Neque laoreet suspendisse interdum consectetur libero. Etiam erat
+              velit scelerisque in dictum non consectetur a. Amet facilisis
+              magna etiam tempor orci. Ipsum nunc aliquet bibendum enim
+              facilisis gravida neque convallis a.
+            </p>
+            <div class="actions">
+              <span class="icon-outline"> star_border </span>
+              <span class="icon-outline"> visibility </span>
+              <span class="icon-outline"> open_in_new </span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h5 class="card-title">Ad Blocker</h5>
+            <p class="card-text">
+              Vitae ultricies leo integer malesuada nunc. Sed viverra tellus
+              in hac habitasse platea dictumst vestibulum. Neque viverra justo
+              nec ultrices dui sapien eget mi. Pulvinar proin gravida hendrerit
+              lectus.
+            </p>
+            <div class="actions">
+              <span class="icon-outline"> star_border </span>
+              <span class="icon-outline"> visibility </span>
+              <span class="icon-outline"> open_in_new </span>
+            </div>
+          </div>
+          <div class="card">
+            <h5 class="card-title">Money Maker</h5>
+            <p class="card-text">
+              Nam at lectus urna duis convallis. Morbi quis commodo
+              odio aenean sed adipiscing diam. Pellentesque id nibh
+              tortor id aliquet. Sapien nec sagittis aliquam malesuada.
+              Tortor aliquam nulla facilisi cras fermentum odio eu.
+            </p>
+            <div class="actions">
+              <span class="icon-outline"> star_border </span>
+              <span class="icon-outline"> visibility </span>
+              <span class="icon-outline"> open_in_new </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="announcements">
+        <h3>Announcements</h3>
+        <ul class="card">
+          <li class="announcement">
+            <h5 class="card-title">Site Maintenance</h5>
+            <p class="card-text">
+              Morbi blandit cursus risus at ultrices.
+              Bibendum ut tristique et egestas quis ipsum. 
+              Ultricies mi eget mauris pharetra et. Elit eget 
+              gravida cum sociis natoque penatibus et.
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Community Share Day</h5>
+            <p class="card-text">
+              Vel rem, ipsa officia commodi veniam excepturi, ex, molestias
+              perspiciatis consequuntur sint error voluptatem cum facilis?
+              Voluptas accusantium, nemo laboriosam quidem ipsum explicabo sed
+              alias possimus reprehenderit libero? Quidem illo nisi fuga odio
+              veritatis ipsa ex quae, aut saepe!
+            </p>
+          </li>
+          <li class="announcement">
+            <h5 class="card-title">Updated Privacy Policy</h5>
+            <p class="card-text">
+              ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. 
+              Ipsum nunc aliquet bibendum enim. Ac turpis egestas integer eget. 
+              Eget nunc scelerisque viverra mauris in aliquam sem fringilla ut. 
+              Nec feugiat nisl pretium fusce id velit. At consectetur lorem donec massa s
+              apien. Ornare arcu dui vivamus arcu felis bibendum.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="trending">
+        <h3>Trending</h3>
+        <ul class="card">
+          <li class="trend trend-1">
+            <div class="picture"></div>
+            <div class="account">
+              <p class="username">@tegan</p>
+              <p class="name card-text">World Peace Builder</p>
+            </div>
+          </li>
+          <li class="trend trend-2">
+            <div class="picture"></div>
+            <div class="account">
+              <p class="username">@morgan</p>
+              <p class="name card-text">Super Cool Project</p>
+            </div>
+          </li>
+          <li class="trend trend-3">
+            <div class="picture"></div>
+            <div class="account">
+              <p class="username">@kendall</p>
+              <p class="name card-text">Life Changing App</p>
+            </div>
+          </li>
+          <li class="trend trend-4">
+            <div class="picture"></div>
+            <div class="account">
+              <p class="username">@alex</p>
+              <p class="name card-text">No Traffic Maker</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>
