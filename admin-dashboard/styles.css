@@ -1,3 +1,12 @@
+ul {
+    list-style: none;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     height: 100vh;
     display: grid;
@@ -10,11 +19,34 @@ body {
 /* Sidebar */
 
 .sidebar {
-    background-color: blue;
-    color: gray;
+    background-color: rgb(48, 132, 211);
+    color: white;
     grid-area: sidebar;
     padding: 2rem;
 }
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    font-size: 2.25rem;
+}
+
+.nav {
+    font-size: 1.25rem;
+    margin-top: 3rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav-link > [class^='material-icons'] {
+    font-size: 1.7em;
+  }
 
 /* Header */
 
