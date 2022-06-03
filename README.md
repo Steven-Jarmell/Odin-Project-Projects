@@ -11,3 +11,5 @@ Project 3: Etch-a-sketch game with basic CSS styling
 Project 4: Kenny Pickett themed Sign-up form for an imaginary Kenny Pickett fan club
 
 Project 5: Admin Dashboard
+
+Project 6: Library
