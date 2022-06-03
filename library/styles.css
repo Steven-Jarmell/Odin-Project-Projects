@@ -42,4 +42,33 @@ button {
     border-radius: 4px;
     padding: 6px 10px;
     background-color: rgb(123, 154, 255);
+    cursor: pointer;
+}
+
+.book-shelf {
+    display: grid;
+    overflow: auto;
+    justify-content: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+
+.grid-item {
+    background-color: aqua;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-shelf button {
+    width: 15vw;
+    margin: 1rem;
 }
