@@ -8,7 +8,35 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        Init
+        <header class="header">
+            <h1>Book Library</h1>
+        </header>
+        <div class="container">
+            <form action="#" method="post" class="form">
+                <div class="get-book-name">
+                    <label for="book-name">Book</label>
+                    <input type="text" id="book-name" name="book-name">
+                </div>
+                <div class="get-book-author">
+                    <label for="book-author">Author</label>
+                    <input type="text" id="book-author" name="book-author">
+                </div>
+                <div class="get-number-pages">
+                    <label for="book-pages">Number of Pages</label>
+                    <input type="number" id="book-pages" name="number-pages" min="0">
+                </div>
+                <div class="get-read-status">
+                    <label for="read-status">Status</label>
+                    <select id="read-status" name="read-status">
+                        <option value="read" class="option">Read</option>
+                        <option value="not-read" class="option">Not Read</option>
+                    </select>
+                </div>
+                <div class="but">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
     </body>
     <script src="./library.js"></script>
 </html>

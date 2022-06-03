@@ -1,3 +1,45 @@
-:root {
-    background-color: blue;
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    flex-wrap: wrap;
+}
+
+#read-status,
+input {
+    border-radius: 4px;
+    padding: 6px 10px;
+    border: 1px solid rgb(196, 195, 195);
+    background-color: white;
+    font-size: 1.5rem;
+    display: flex;
+}
+
+[class^="get-"] {
+    flex: 1 0 15%;
+}
+
+.but {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 4px;
+    padding: 6px 10px;
+    background-color: rgb(123, 154, 255);
 }
