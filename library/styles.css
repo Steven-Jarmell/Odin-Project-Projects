@@ -50,12 +50,12 @@ button {
     overflow: auto;
     justify-content: center;
     grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-items: center;
     align-items: center;
     padding: 2rem;
     margin-top: 2rem;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .grid-item {
@@ -71,4 +71,10 @@ button {
 .book-shelf button {
     width: 15vw;
     margin: 1rem;
+}
+
+:root {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
 }
