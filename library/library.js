@@ -7,16 +7,7 @@ function Book(title, author, numPages, read) {
     this.read = read;
 }
 
-function addBookToLibrary(book) {
-    event.preventDefault();
-
-    myLibrary.push(book);
-    console.log(book.title);
-    render();
-
-    form.reset();
-}
-
+// When a user enters data, add the book to the library
 let form = document.querySelector('.form');
 form.addEventListener('submit', (e) => {
     let bookName = document.querySelector('#book-name').value;
@@ -29,6 +20,20 @@ form.addEventListener('submit', (e) => {
 
     addBookToLibrary(bookToAdd);
 });
+
+/**
+ * Adds the book to the list and then renders it on the page
+ * 
+ * @param {Book} book The book to add to the library
+ */
+function addBookToLibrary(book) {
+    event.preventDefault();
+
+    myLibrary.push(book);
+    render();
+
+    form.reset();
+}
 
 /**
  * Loops through the array and displays each book on the page
@@ -44,14 +49,9 @@ function render() {
 }
 
 /**
- * Changes the read status of the selected book
- */
-function changeReadStatus() {
-
-}
-
-/**
- * Creates the book DOM element based on the input
+ * Creates the DOM element for each book
+ * 
+ * @param {List} book List of the book elements to create the element
  */
 function createBook(book) {
     const bookShelf = document.querySelector('.book-shelf');
@@ -94,12 +94,11 @@ function createBook(book) {
     removeBtn.classList.add('delete-book-btn');
     bookDiv.appendChild(removeBtn);
 
+    // Add the book to the bookshelf
     bookShelf.appendChild(bookDiv);
 
-    //add toggle ability to each book 'read' button on click
+    // Add the ability to toggle the read button on the book
     readBtn.addEventListener('click', () => {
-        console.log(readBtn.textContent);
-
         if(readBtn.textContent === 'Read') {
             myLibrary[myLibrary.indexOf(book)].read = 'not-read';
         }
@@ -110,6 +109,7 @@ function createBook(book) {
         render();
     }); 
     
+    // Add the ability to remove the book from the shelf
     removeBtn.addEventListener('click', () => {
         myLibrary.splice(myLibrary.indexOf(book),1);
         console.log('RemoveBtn clicked');
