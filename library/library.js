@@ -95,14 +95,24 @@ function createBook(book) {
     bookDiv.appendChild(removeBtn);
 
     bookShelf.appendChild(bookDiv);
-}
 
-/*
- <div class="grid-item">
-                    <p class="book-title">Book Title</p>
-                    <p class="book-author">Author</p>
-                    <p class="book-pages">Number of Pages</p>
-                    <button class="read-status-btn">Read</button>
-                    <button class="delete-book-btn">Delete</button>
-                </div>
-*/
+    //add toggle ability to each book 'read' button on click
+    readBtn.addEventListener('click', () => {
+        console.log(readBtn.textContent);
+
+        if(readBtn.textContent === 'Read') {
+            myLibrary[myLibrary.indexOf(book)].read = 'not-read';
+        }
+        else {
+            myLibrary[myLibrary.indexOf(book)].read = 'read';
+        }
+
+        render();
+    }); 
+    
+    removeBtn.addEventListener('click', () => {
+        myLibrary.splice(myLibrary.indexOf(book),1);
+        console.log('RemoveBtn clicked');
+        render();
+    });
+} 
