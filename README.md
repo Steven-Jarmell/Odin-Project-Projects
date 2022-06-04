@@ -13,3 +13,5 @@ Project 4: Kenny Pickett themed Sign-up form for an imaginary Kenny Pickett fan 
 Project 5: Admin Dashboard
 
 Project 6: Library
+
+Project 7: Tic Tac Toe
