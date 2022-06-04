@@ -65,17 +65,17 @@ function createBook(book) {
     bookDiv.classList.add('grid-item');
 
     // Set the title attribute
-    titleDiv.textContent = book.title;
+    titleDiv.textContent = 'Title: ' + book.title;
     titleDiv.classList.add('book-title');
     bookDiv.appendChild(titleDiv);
 
     // Set the author attribute
-    authDiv.textContent = book.author;
+    authDiv.textContent = 'Author: ' + book.author;
     authDiv.classList.add('book-author');
     bookDiv.appendChild(authDiv);
 
     // Set the number of pages
-    pageDiv.textContent = book.numPages;
+    pageDiv.textContent = 'Number of Pages: ' + book.numPages;
     pageDiv.classList.add('book-pages');
     bookDiv.appendChild(pageDiv);
 
@@ -115,4 +115,6 @@ function createBook(book) {
         console.log('RemoveBtn clicked');
         render();
     });
-} 
+}
+
+render();

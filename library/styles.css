@@ -1,3 +1,9 @@
+:root {
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -19,7 +25,7 @@ body {
 input {
     border-radius: 4px;
     padding: 6px 10px;
-    border: 1px solid rgb(196, 195, 195);
+    border: 1px solid rgb(180, 180, 180);
     background-color: white;
     font-size: 1.5rem;
     display: flex;
@@ -41,7 +47,7 @@ button {
     font-size: 1.5rem;
     border-radius: 4px;
     padding: 6px 10px;
-    background-color: rgb(123, 154, 255);
+    background-color: rgb(161, 213, 255);
     cursor: pointer;
 }
 
@@ -59,7 +65,8 @@ button {
 }
 
 .grid-item {
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(254, 79, 79);
     padding: 2rem;
     border-radius: 10px;
     display: flex;
@@ -71,10 +78,18 @@ button {
 .book-shelf button {
     width: 15vw;
     margin: 1rem;
+    background-color: #ffffff;
+    border: 3px solid #fe4f4f;
 }
 
-:root {
+.book-shelf button:hover {
+    background-color: rgb(254, 79, 79);
+    color: white;
+}
+
+.book-author,
+.book-title,
+.book-pages {
     font-size: 1.25rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    margin: .75rem;
 }
