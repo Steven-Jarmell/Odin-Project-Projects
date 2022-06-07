@@ -1,10 +1,12 @@
 let myLibrary = [];
 
-function Book(title, author, numPages, read) {
-    this.title = title;
-    this.author = author;
-    this.numPages = numPages;
-    this.read = read;
+class Book {
+    constructor(title, author, numPages, read) {
+        this.title = title;
+        this.author = author;
+        this.numPages = numPages;
+        this.read = read;
+    }
 }
 
 // When a user enters data, add the book to the library
