@@ -15,3 +15,5 @@ Project 5: Admin Dashboard
 Project 6: Library
 
 Project 7: Tic Tac Toe
+
+Project 8: Restaurant homepage
